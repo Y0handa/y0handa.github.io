@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>Archives - Hexo</title>
+  <title>about - Hexo</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -63,7 +63,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Archives - Hexo | Hexo">
+  <meta property="og:title" content="about - Hexo | Hexo">
   <meta property="og:image" content="/images/favicon.png" />
   
 
@@ -427,150 +427,315 @@
 
 
     <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="archive">
+      <div class="barba-container"  data-namespace="post">
         
   
-<div class="theme-archive">
-  <div class="theme-archive__index">
-    <div class="theme-archive__header">
-      <div class="theme-archive__header__bg">
-        <img class="mdui-img-fluid mdui-img-rounded" src="/images/bg.png"/>
-      </div>
-      <div class="theme-archive__header__content" style="background-color:#eeeeee">
-        <img class="mdui-img-circle theme-archive__header__avatar" src="/images/avatar.png"/>
-        <div class="theme-archive__header__info">
-          <div class="theme-archive__header__name">
-            John Doe
-          </div>
-          <div class="theme-archive__header__slogan">
-            I&#39;m your slogan!
-          </div>
-        </div>
-        <div class="theme-spacer mdui-hidden-sm-down"></div>
-        
-          <button class="theme-archive__header__button mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
-        
-      </div>
+
+
+
+  
+<link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+
+  
+<link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      about
     </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Categories
-      </div>
-      <div class="mdui-row">
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>Posted: </span>
+        <span style="float: right">Jul 24, 2020</span>
         
       </div>
-    </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Tags
-      </div>
-      <div class="mdui-row">
-        
-      </div>
-    </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Years
-      </div>
-      <div class="mdui-row">
-        
-          
-          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
-            <a href="/archives/2020" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-cyan">
-                <div class="mdui-card-media" style="background-image: url(/images/random/41.png)"></div>
-                <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
-                  <div class="theme-archive__items__text-title">2020</div>
-                </div>
-              </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        Article QR Code
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB5klEQVR42u3aSW7DMAwF0Nz/0u22QFH7k1KRWHxeBZnM5wUhDq+vI64XBgYGBgYGBsbHMF7x9fP7v3/716fXd+nFgIGBMZNxk9pawVX/J48BAwNjMiNJsj3AdbjNGDAwMDDi5Jiz80SMgYGBsSvhXodVKEcxMDAwthaxeWma8N5Wi2NgYDyQsTIY2PX6zfMNDAyMD2aUVxyC492uJPuPOyMYGBiPYiTLE9et/14avTn2XUaFgYGBUS1Be0OCHNnsGmJgYBzE2NXWr/KqKbt8wsXAwDiIkY8q8xtUi+HqYREDA2MaI//T68ZZtdGfpN2boyoGBsYwRhJuNU33HkphFIGBgTGGkS+P9hZbe8sczZ0RDAyMMYwkoPUSd6V8xcDAwIjGh8WyNj8UYmBgYOQjzN7r6spF/rAwMDAmM1aOeknxudKkKwwGMDAwjmYkB8FdDbUkERciwcDAGMbIb1ZdqugNALbtjGBgYBzEyK9qqZmXtUsjTAwMjKMZ64e5lRCTgrnQbsPAwDia0RsVrCfWlfcxMDBmMnqLqjeDxuLixbb5BgYGxmBGdUi5axiwOeFiYGAMY+SJMvm00ObDwMAYyVhZsKg2znrfxMDAmMxYX+TKH0c1aAwMDIznXhgYGBgYGBgYb72+AbJ8fYK7oQRsAAAAAElFTkSuQmCC" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//about/index.html" target="_blank" class="mdui-ripple">
+                Share to Facebook
             </a>
-          </div>
-        
-      </div>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=http://yoursite.com//about/index.html" target="_blank" class="mdui-ripple">
+                Share to Google+
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//about/index.html&title=about" target="_blank" class="mdui-ripple">
+                Share to Linkedin
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=about&url=http://yoursite.com//about/index.html&via=John Doe" target="_blank" class="mdui-ripple">
+                Share to Twitter
+            </a>
+        </li>
+      
+
+      
+
+    </ul>
+  </div>
+
+
     </div>
   </div>
+  <div class="theme-post__warpper
+    
+      theme-post__warpper--center
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/1.png"/>
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              Article License: 
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="http://yoursite.com/about">http://yoursite.com/about</a></span>
+            
+              <br />
+              <span>Article Markdown: <a href="http://yoursite.com/aboutundefined.md">http://yoursite.com/aboutundefined.md</a></span>
+            
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
   
-    <div class="mdui-dialog" id="contactDialog">
-      <div class="mdui-dialog-title">
-        How to contact me
-      </div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">Buy me a beer?</div>
       <div class="mdui-dialog-content">
         <div class="mdui-list">
           
-            <a href="https://twitter.com" title="Twitter" class="mdui-list-item mdui-ripple" target="_blank">
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
               
-                <i class="mdui-list-item-icon mdui-icon fa fa-twitter mdui-text-center"></i>&emsp;
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
               
               
               
-              Twitter
+              wechat
             </a>
           
-            <a href="https://facebook.com" title="Facebook" class="mdui-list-item mdui-ripple" target="_blank">
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
               
               
               
-                <i class="mdui-list-item-icon"></i>&emsp;
-              
-              Facebook
+              paypay
             </a>
           
         </div>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple" mdui-dialog-close>
-          Close
-        </button>
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
       </div>
     </div>
   
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
 </div>
 <script type="text/javascript">
-  themeRuntime.scriptsMap.archive = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
       }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
     }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1595585072588
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
     }
-    themeRuntime.scriptsMap.archive.push(listener)
   })();
 </script>
-<script>
-    window.addEventListener("scroll", parallaxImg)
-    function parallaxImg(){
-      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      document.querySelector('.theme-archive__header__bg img')
-        .style.transform = 'translateY(' + bodyScrolled * 0.4 + 'px)';
-    }
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
     var listener = {
-      function: parallaxImg,
-      event: 'scroll',
-      el: window,
+      function:  openLG,
+      event: 'click',
+      el: images[i],
       removed: false
     }
-    themeRuntime.scriptsMap.archive.push(listener)
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>John Doe</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
 </script>
+
+
 
 
 

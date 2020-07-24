@@ -33,7 +33,7 @@
         -->
 
   <meta charset="UTF-8">
-  <title>Archives - Hexo</title>
+  <title>Bagas_Hexo - Hexo</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -63,7 +63,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Archives - Hexo | Hexo">
+  <meta property="og:title" content="Bagas_Hexo - Hexo | Hexo">
   <meta property="og:image" content="/images/favicon.png" />
   
 
@@ -427,149 +427,353 @@
 
 
     <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="archive">
+      <div class="barba-container"  data-namespace="post">
         
+
+
+
   
-<div class="theme-archive">
-  <div class="theme-archive__index">
-    <div class="theme-archive__header">
-      <div class="theme-archive__header__bg">
-        <img class="mdui-img-fluid mdui-img-rounded" src="/images/bg.png"/>
-      </div>
-      <div class="theme-archive__header__content" style="background-color:#eeeeee">
-        <img class="mdui-img-circle theme-archive__header__avatar" src="/images/avatar.png"/>
-        <div class="theme-archive__header__info">
-          <div class="theme-archive__header__name">
-            John Doe
-          </div>
-          <div class="theme-archive__header__slogan">
-            I&#39;m your slogan!
-          </div>
-        </div>
-        <div class="theme-spacer mdui-hidden-sm-down"></div>
-        
-          <button class="theme-archive__header__button mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
-        
-      </div>
+<link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+
+  
+<link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      Bagas_Hexo
     </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Categories
-      </div>
-      <div class="mdui-row">
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>Posted: </span>
+        <span style="float: right">Jul 24, 2020</span>
         
       </div>
-    </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Tags
-      </div>
-      <div class="mdui-row">
-        
-      </div>
-    </div>
-    <div class="theme-archive__items mdui-container-fluid">
-      <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        Years
-      </div>
-      <div class="mdui-row">
-        
-          
-          <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
-            <a href="/archives/2020" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-cyan">
-                <div class="mdui-card-media" style="background-image: url(/images/random/41.png)"></div>
-                <div class="theme-archive__items__content theme-archive__items__content--no-length">
-                  <img class="mdui-img-circle theme-archive__items__avatar" src="/images/avatar.png" />
-                  <div class="theme-archive__items__text-title">2020</div>
-                </div>
-              </div>
+      
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        Article QR Code
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZklEQVR42u3aQXLDMAgF0Nz/0u0BOm4+SCJ25nmV6diWnheIAq+fr75eeHh4eHh4eHh4N+O94uvvU1e/e/dfPVXeGx4eHt4I702ovbgn2VDyhvz90R7w8PDwBnnJ5vKg32NXjxA8PDy8Z/HyVDgJ7sm6eHh4eM/lVUN871DBw8PDuz8v+Yc/33T+CfL0/XitBQ8PDy/m5U2m+d+j/T08PDy8gFceaYoDd54i58dAeegKDw8P7wAvD8RJy78a1pMUPNkPHh4e3iQvL0wkZYiVo6XaWouKEXh4eHgHeHk47hV/q420XjqOh4eHN8lLGlcrZYikPVZN4vHw8PDuxttVmEiOiry8W1gFDw8P7zAvLwdUQ3bv/t5aeHh4ePO8lXJq1JRqhft85AsPDw9vkpeUDKopcvXgqabU5dEBPDw8vK28Xpuq+jnyY6Dc7tqVUuPh4eG1eL0Wft70epMKxyNWzaErPDw8vGO8/HUrjavqgMKGmTI8PDy8rby9QXy96JAn5YX+Hh4eHt4mXj5ulSPz0L+r6YWHh4c3yatuYqnAulD4yI8uPDw8vBnernZUHuJ7gwvRcYWHh4c3zltPoPMS7a6iMB4eHt5nedX0Ny/g5mv9f73ZOR4eHt5hXvVaWrg1TFAt5uLh4eGd5lXDcfXZaoFjaKYMDw8Pb5mXHAZJotz7KL2D4fIj4uHh4Q3yqgG6vHD8/jxxx8PDw3sWr1fAXfn76MGAh4eHd+xg6I0d7C0Q4+Hh4X2K19t0EsQTUkJtNsDw8PDwDvB6o0699LdazkiewsPDw5vkfd+Fh4eHh4eHh4d3g+sX/hc+2prz2XIAAAAASUVORK5CYII=" style="cursor: auto">
+    </ul>
+  </div>
+
+
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2020/07/24/Bagas-Hexo/index.html" target="_blank" class="mdui-ripple">
+                Share to Facebook
             </a>
-          </div>
-        
-      </div>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=http://yoursite.com//2020/07/24/Bagas-Hexo/index.html" target="_blank" class="mdui-ripple">
+                Share to Google+
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//2020/07/24/Bagas-Hexo/index.html&title=Bagas_Hexo" target="_blank" class="mdui-ripple">
+                Share to Linkedin
+            </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Bagas_Hexo&url=http://yoursite.com//2020/07/24/Bagas-Hexo/index.html&via=John Doe" target="_blank" class="mdui-ripple">
+                Share to Twitter
+            </a>
+        </li>
+      
+
+      
+
+    </ul>
+  </div>
+
+
     </div>
   </div>
+  <div class="theme-post__warpper
+    
+      theme-post__warpper--center
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/22.png"/>
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          <p><b>This is between me, coding and error.</b><br>So, from the title it is clear this is like a ‘trial’ program for many developers when using new technology(for some reason hello world I also don’t know).<br>I loved computers very much, and when I graduated from junior high school I decided to go to a vocational school and then major in software engineering. so from there I know programming (10th grade school which was about 2 years ago).</p>
+<p>I am also not a person who is very skilled in this field(only 2 years of study), but at least not really a newbie hahaha. the motivation to continue learning is always within me even though I thought of ‘ok, I want to focus on using this language or this framework’, but I realize this is a world of technology which changes very quickly (seriously), if I don’t update with another language/framework maybe I’ll be eroded by age.</p>
+<p>Often I am confused about what part of the focus, whether it’s web, mobile or desktop, not infrequently the feeling of wanting to end it all just because of an error (fuck you). Starting to feel unworthy to be a programmer and always confused with the errors encountered.</p>
+<p>Until now I still feel the same way when an error occurs, it always feels curious that the error hasn’t disappeared. Maybe someone has experienced what I experienced too.</p>
+<p>And of course my feelings will be very happy if the error message changes even though the error is really not fixed. but at least I have been struggling to resolve the error and this is where I usually start using stackoverflow, google and the community is very helpful (most often to the coding school forum hahaha).</p>
+<p>Many developers say that if we have to think of an error as a friend, when we meet him it means we will have new experiences, we will learn new things. The spirit in the face of errors that exist, all can certainly be resolved.<br>remember, it is not only you &amp; erroe that has been experienced by other people too (believe me).</p>
+<p>Okay maybe that’s all this article, thank you for reading.<br>Happy coding!</p>
+
+        </section>
+
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              Article License: 
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="http://yoursite.com/2020/07/24/Bagas-Hexo/">http://yoursite.com/2020/07/24/Bagas-Hexo/</a></span>
+            
+              <br />
+              <span>Article Markdown: <a href="http://yoursite.com/2020/07/24/Bagas-Hexo/Bagas-Hexo.md">http://yoursite.com/2020/07/24/Bagas-Hexo/Bagas-Hexo.md</a></span>
+            
+          </section>
+        
+
+        
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
+              </button>
+            
+            <div class="theme-spacer"></div>
+            
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
+          
+        
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="theme-spacer"></div>
+
   
-    <div class="mdui-dialog" id="contactDialog">
-      <div class="mdui-dialog-title">
-        How to contact me
-      </div>
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
+      
+        <a href="/2020/07/24/test/" class="theme-post__pagination__prev__content mdui-text-left">
+        
+        <div>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          test
+        </div>
+      </a>
+    </div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      
+        <a href="/2020/07/24/hello-world/" class="theme-post__pagination__next__content mdui-text-right">
+        
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Older Post</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          Hello World
+        </div>
+      </a>
+    </div>
+    
+</div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">Buy me a beer?</div>
       <div class="mdui-dialog-content">
         <div class="mdui-list">
           
-            <a href="https://twitter.com" title="Twitter" class="mdui-list-item mdui-ripple" target="_blank">
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
               
-                <i class="mdui-list-item-icon mdui-icon fa fa-twitter mdui-text-center"></i>&emsp;
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
               
               
               
-              Twitter
+              wechat
             </a>
           
-            <a href="https://facebook.com" title="Facebook" class="mdui-list-item mdui-ripple" target="_blank">
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
               
               
               
-                <i class="mdui-list-item-icon"></i>&emsp;
-              
-              Facebook
+              paypay
             </a>
           
         </div>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple" mdui-dialog-close>
-          Close
-        </button>
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
       </div>
     </div>
   
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
 </div>
 <script type="text/javascript">
-  themeRuntime.scriptsMap.archive = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
       }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
     }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
+  }
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var postLastModifiedDate = 1595585326981
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
     }
-    themeRuntime.scriptsMap.archive.push(listener)
   })();
 </script>
-<script>
-    window.addEventListener("scroll", parallaxImg)
-    function parallaxImg(){
-      var bodyScrolled = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      document.querySelector('.theme-archive__header__bg img')
-        .style.transform = 'translateY(' + bodyScrolled * 0.4 + 'px)';
-    }
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
     var listener = {
-      function: parallaxImg,
-      event: 'scroll',
-      el: window,
+      function:  openLG,
+      event: 'click',
+      el: images[i],
       removed: false
     }
-    themeRuntime.scriptsMap.archive.push(listener)
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>John Doe</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
 </script>
 
 
